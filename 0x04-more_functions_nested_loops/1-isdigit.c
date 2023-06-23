@@ -2,11 +2,11 @@
 
 /**
  * _isdigit - Checks for a digit
- * @c: The character to be checkeD
+ * @c: The character to be checked
  * Return: 1 for uppercase character or 0 for anything else
  */
 
-int _isdigit(int c);
+int _isdigit(int c)
 {
 	if (c >= 48 && c <= 57)
 {
