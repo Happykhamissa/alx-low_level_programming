@@ -5,37 +5,17 @@
  * @s: the size of the memory to print
  * @b: the address of memory to print
  * @n: unsigned integer
- * Return: a pinter
+ * Return: s
  */
 
 char *_memset(char *s, char b, unsigned int n)
-
 {
-	char *p = s;
+	unsigned int i;
 
-	while (n > 0)
+	for (i = 0; i < n; i++)
 	{
-	*p = b;
-	p++;
-	n--;
+		s[i] = b;
 	}
+
 	return (s);
-}
-
-int main(void)
-
-{
-	char arr[10];
-	int i;
-
-	_memset(arr, 'A', sizeof(arr));
-
-	printf("Memory filled with 'A': ");
-	for (i = 0; i < sizeof(arr); i++)
-	{
-		printf("%c ", arr[i]);
-	}
-	printf("\n");
-
-	return (0);
 }
