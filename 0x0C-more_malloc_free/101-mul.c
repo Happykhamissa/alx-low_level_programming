@@ -150,7 +150,7 @@ int main(int argc, char **argv)
 	char *nb1 = argv[1];
 	char *nb2 = argv[2];
 
-	if (argc != 3  !strNumbers(nb1)  !strNumbers(nb2))
+	if (argc != 3 || !strNumbers(nb1) || !strNumbers(nb2))
 	{
 		_puts("Error");
 		exit(98);
