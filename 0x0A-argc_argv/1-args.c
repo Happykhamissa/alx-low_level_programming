@@ -12,7 +12,7 @@ int main(int argc, char *argv[])
 {
 	(void) argv;
 
-		 printf("The number of arguments is: %d\n", argc -1);
+		 printf("The number of arguments is: %d\n", argc - 1);
 
 	return (0);
 }
