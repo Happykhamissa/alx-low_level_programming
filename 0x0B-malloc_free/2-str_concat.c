@@ -66,8 +66,17 @@ char *_strcat(char *dest, char *src)
 
 char *str_concat(char *s1, char *s2)
 {
-	unsigned int length1 = strlen(s1);
-	unsigned int length2 = strlen(s2);
+	
+	unsigned int length1;
+	unsigned int length2;
+
+	if (s1 == NULL && s2 == NULL)
+	{
+		return (NULL);
+	}
+	
+	length1 = strlen(s1);
+        length2 = strlen(s2);
 
 	char *string = (char *)malloc(((length1 + length2) + 1) * sizeof(char));
 
