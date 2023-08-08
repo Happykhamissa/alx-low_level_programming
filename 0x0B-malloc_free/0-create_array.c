@@ -28,9 +28,9 @@ char *create_array(unsigned int size, char c)
 			printf("memory not available");
 			return (NULL);
 		}
-		
+
 			for (i = 0; i < size ; i++)
 				array[i] = c;
-	
+
 	return (array);
 }
