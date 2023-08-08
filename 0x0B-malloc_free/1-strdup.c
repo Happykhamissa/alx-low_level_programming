@@ -37,7 +37,7 @@ char *_strcpy(char *dest, char *src)
 char *_strdup(char *str)
 {
 
-	unsigned char length = strlen(str);
+	unsigned int length = strlen(str);
 
 	char *NewString = (char *)malloc((length + 1) * sizeof(char));
 
