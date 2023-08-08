@@ -36,10 +36,18 @@ char *_strcpy(char *dest, char *src)
 
 char *_strdup(char *str)
 {
+	
+	char *NewString = NULL;
+	unsigned int length;
 
-	unsigned int length = strlen(str);
+	if (str == NULL)
+	{
+		return (NULL);
+	}
 
-	char *NewString = (char *)malloc((length + 1) * sizeof(char));
+	length = strlen(str);
+
+	NewString = (char *)malloc((length + 1) * sizeof(char));
 
 	if (NewString == NULL)
 	{
