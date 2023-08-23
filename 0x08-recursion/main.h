@@ -10,6 +10,9 @@ int _sqrt_recursion(int n);
 int _sqrt(int n, int i);
 int is_prime_number(int n);
 int is_prime_recursive(int n, int i);
+int is_palindrome(char *s);
+int _strlen_rec(char *sl);
+int _is_palindrome(char *starts, char *ends, int len, int l);
 int _putchar(char c);
 
 
