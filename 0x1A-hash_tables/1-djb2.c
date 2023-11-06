@@ -1,0 +1,19 @@
+/**
+ * hash_djb2 - Hash function that turns a string into a hash number
+ * @str: the string, a constant value unrepeated in the hash table
+ *
+ * Return: The hash number
+ */
+
+unsigned long int hash_djb2(const unsigned char *str)
+{
+    unsigned long int hash;
+    int c;
+
+    hash = 5381;
+    while ((c = *str++))
+    {
+        hash = ((hash << 5) + hash) + c;
+    }
+    return (hash);
+}
